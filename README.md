@@ -61,7 +61,7 @@ ELK, Zabbix, nginx:
 Создано три группы безопасности  
 
 в группе private-network разрешен трафик для необходимых портов (постгрес, patroni, etcd, ELK, zabbix, ssh) для всех четырех подсетей, также разрешен исходящий трафик для скачивания обновлений и пакетов и обращения к серверам DNS и NTP  
-https://github.com/SergeyM90/Diplom/blob/main/Terraform/sec_private.tf  
+https://github.com/BelkaBro/Diplom/blob/main/Terraform/sec_private.tf  
 
 группа public-network - это сервисы, которые должны быть доступны извне - внешний балансировщик Яндекса и NGINX. При этом GUI Kibana и Zabbix сидят за обратным прокси nginx.  
 https://github.com/BelkaBro/Diplom/blob/main/Terraform/sec_public.tf  
